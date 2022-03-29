@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Square from './components/Square';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-header">
+      <p className="heading-text">Morpion avec React</p>
+      <div className=" row jc-center">
+        <Square className="b-bottom-right"/>
+        <Square className="b-bottom-right"/>
+        <Square className="b-bottom"/>
+      </div>
+      <div className=" row jc-center">
+        <Square className="b-bottom-right"/>
+        <Square className="b-bottom-right"/>
+        <Square className="b-bottom"/>
+      </div>
+      <div className=" row jc-center">
+        <Square className="b-right"/>
+        <Square className="b-right"/>
+        <Square/>
+      </div>
+      <button className='rejouer-button'>Rejouer</button>
+      <p className='fc-aqua fw-600'>Chamssoudine DIABY- 2022</p>
     </div>
   );
 }
